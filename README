@@ -1,0 +1,11 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=74
+
+     This script provide a command, :TeXtags, that will generate a tags
+file in the current directory based on a LaTeX .aux file.  If you are editing
+the file foo.tex in the current directory, just type :TeXtags.  You can then
+use Vim's tag functions to display, or jump to, labels in foo.tex.
+
+     At the moment, this only works for \label{} commands, not bibliographic
+citations.  TODO:  handle \bibcite; handle multiple files with \input lines;
+be more intelligent about directories; escape problematic characters in tags;
+use :silent and <buffer> for Vim 6.0; etc.
